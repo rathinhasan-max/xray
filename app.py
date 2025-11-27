@@ -249,10 +249,10 @@ def initialize_model():
         return False
 
 
+# Initialize model on module import (for Gunicorn)
+initialize_model()
+
 if __name__ == '__main__':
-    # Initialize model before starting server
-    initialize_model()
-    
     # Start Flask server
     logger.info(f"Starting Flask server on {HOST}:{PORT}")
     app.run(host=HOST, port=PORT, debug=DEBUG)
