@@ -61,7 +61,7 @@ def cleanup_old_uploads():
                 file_age = current_time - os.path.getmtime(filepath)
                 if file_age > 3600:  # 1 hour
                     os.remove(filepath)
-                    logger.info(f"Cleaned up old file: {filename}")
+                    logger.info(f"Cleaned up old files: {filename}")
     except Exception as e:
         logger.error(f"Error cleaning up uploads: {str(e)}")
 
