@@ -33,9 +33,9 @@ instance/
 .webassets-cache
 
 # Model files (large files)
-models/*.h5
-models/*.hdf5
-models/*.pb
+# models/*.h5
+# models/*.hdf5
+# models/*.pb
 
 # Uploaded images
 uploads/*
